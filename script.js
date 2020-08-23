@@ -31,7 +31,7 @@ function getRandomQuote() {
   return fetch(RANDOM_QUOTE_API_URL)
     .then(response => response.json())
     .then(data => data.content)
-    .cathc(err => {
+    .catch(err => {
       console.log(err)
     })
 }
